@@ -26,4 +26,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)countUp:(id)sender
+{
+    _counter.text = [NSString stringWithFormat:@"%d", _counter.text.intValue + 1];
+}
+
+- (IBAction)countDown:(id)sender
+{
+    _counter.text = [NSString stringWithFormat:@"%d", _counter.text.intValue - 1];
+}
+
 @end
